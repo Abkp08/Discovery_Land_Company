@@ -1,0 +1,339 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 0;
+}
+
+
+.img-background {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.img-background::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.video-text {
+    font-family: gotham;
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 5em;
+    z-index: 3;
+    text-align: center;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+
+    float: left;
+
+}
+
+.logo img {
+    color: white;
+    width: 150px;
+    height: auto;
+}
+
+.company-name {
+    background-color: rgb(246, 248, 248);
+    float: left;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.nav {
+    text-align: center;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(241, 228, 228);
+}
+
+.subtitle-container {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.subtitle {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5em;
+    color: rgb(7, 5, 5);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+
+.both {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.exclusive-to {
+    color: rgb(7, 5, 5);
+    margin-left: 10%;
+    text-align: left;
+
+}
+
+.your-world {
+    color: rgb(29, 19, 19);
+    display: block;
+    margin-top: -10px;
+}
+
+.exclusive-paragraph {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: rgb(7, 5, 5);
+    max-width: 350px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-left: 10%;
+    color: gray;
+}
+
+.exclusive-image {
+    width: 550px;
+    margin-left: 20px;
+    float: right;
+    height: 600px;
+    margin-top: -100px;
+}
+.img-section{
+    width:100%;
+}
+.scrolling-heading h2 {
+    margin-left: 10%;
+}
+
+
+
+.additional-content {
+    background-color: rgb(26, 24, 24);
+    margin: 50px 0;
+}
+.first-content{
+    
+    display: flex;
+    justify-content: space-around;
+}
+.left-content,
+.right-content {
+    width: 38%;
+}
+
+.left-content h3 {
+    margin-left: 20%;
+    font-size: 1.5em;
+    color: rgb(248, 243, 243);
+}
+
+.right-content p {
+    margin-right: 20%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: rgb(238, 230, 230);
+    line-height: 1.5;
+}
+
+.explore-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(245, 243, 243);
+    color: rgb(15, 1, 1);
+    text-decoration: none;
+    border: 1px solid rgb(7, 5, 5);   
+}
+
+.explore-link:hover {
+    background-color: white;
+    color: rgb(7, 5, 5);
+}
+
+.second-content{
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%; /* Make the video responsive */
+    height: auto;
+    margin-top: 20px; /* Adjust margin as needed */
+}
+.both2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.exclusive-to2 {
+    color: rgb(7, 5, 5);
+    margin-left: 10%;
+    text-align: left;
+
+}
+
+.your-world {
+    color: rgb(29, 19, 19);
+    display: block;
+    margin-top: -10px;
+}
+
+.exclusive-paragraph2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: rgb(7, 5, 5);
+    max-width: 350px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-left: 10%;
+    color: gray;
+}
+
+.exclusive-image2 {
+    width: 450px;
+    height: 300px;
+    margin-left: 20px;
+    
+}
+.exclusive-image3 {
+    width: 450px;
+    margin-left: 20px;
+    float: right;
+    height: 600px;
+    margin-top: -100px;
+}
+.last-image{
+    width:100%;
+
+}
+.Our-words {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.last-image2 {
+    display: block;
+    margin: 0 auto;
+}
+
+.Our-words h2, .explore-link4 {
+    position: absolute;
+    color: white;
+}
+
+.Our-words h2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.explore-link4 {
+    top: 65%; /* Adjust the top value as needed */
+    left: 35%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
+
+.explore-link4 {
+    margin-top: 20px;
+    margin-left: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(245, 243, 243);
+    color: rgb(15, 1, 1);
+    text-decoration: none;
+    border: 1px solid rgb(7, 5, 5);
+    margin-left: 15%;
+
+}
+
+.explore-link4:hover {
+    background-color: white;
+    color: rgb(7, 5, 5);
+    z-index: 2;
+}
+
+footer {
+    width: 100%;
+    height: 70vh;
+    background-color: rgb(34, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-items {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer-items div {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+@media (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+}

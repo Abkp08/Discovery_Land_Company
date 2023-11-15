@@ -1,0 +1,263 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    padding: 20px 0;
+}
+
+
+.video-background {
+    width:100%;
+    position: relative;
+    z-index: 1;
+}
+
+.video-background::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+}
+
+.video-text {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2em;
+    z-index: 3; 
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    
+    float: left;
+
+}
+
+.logo img {
+    color: white;
+    width: 150px;
+    height: auto;
+}
+
+.company-name {
+    background-color: rgb(246, 248, 248);
+    float: left;
+    margin-left: 10px;
+    font-size: 24px;
+}
+
+.nav {
+    text-align: center;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: rgb(241, 228, 228);
+}
+
+.subtitle-container {
+    text-align: center;
+    padding: 200px 0;
+}
+
+.subtitle {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: rgb(7, 5, 5);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+}
+.both{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.exclusive-to {
+    color: rgb(7, 5, 5);
+    margin-left: 10%;
+    text-align: left;
+    
+}
+
+.your-world {
+    color: rgb(29, 19, 19);
+    display: block;
+    margin-top: -10px;
+}
+
+.exclusive-paragraph {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1em;
+    color: rgb(7, 5, 5);
+    max-width: 350px;
+    margin: 0 auto;
+    line-height: 1.5;
+    margin-left: 10%;
+    color: gray;
+}
+.exclusive-image {
+    width: 550px;
+    margin-left: 20px;
+    float: right;
+    height: 600px;
+    margin-top: -100px;
+}
+.dual-column-container {
+    position: relative;
+    display: flex;
+    
+}
+
+.left-column {
+    width: 70%;
+}
+
+.left-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.right-column {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    right: 10;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.right-column h3 {
+    color: rgb(7, 5, 5);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+.right-column p {
+    margin-left: 15%;
+    color: rgb(95, 85, 85);
+    line-height: 1.5;
+    height: 50%;
+    margin-right: 15%;
+}
+
+.explore-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(245, 243, 243);
+    color: rgb(15, 1, 1);
+    text-decoration: none;
+    border: 1px solid rgb(7, 5, 5);
+    margin-left: 15%;
+    
+}
+
+.explore-link:hover {
+    background-color: white;
+    color: rgb(7, 5, 5);
+}
+
+.right-column2 {
+    float:right;
+    margin-left: auto;
+    width: 70%;
+}
+
+.right-image {
+    
+    width: 100%;
+    z-index: 1;
+}
+
+.left-column2 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    right: 50%;
+    width: 40%;
+    height: 60%;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+}
+
+.left-column2 h3 {
+    color: rgb(7, 5, 5);
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    margin-left: 15%;
+}
+
+.left-column2 p {
+    margin-left: 15%;
+    color: rgb(95, 85, 85);
+    line-height: 1.5;
+    height: 50%;
+    margin-right: 15%;
+}
+
+footer{
+    width: 100%;
+    height: 50vh;
+    background-color: rgb(34, 31, 31);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer-content{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .footer-content div {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+@media (max-width: 600px) {
+    body {
+        overflow: hidden;
+    }
+}
